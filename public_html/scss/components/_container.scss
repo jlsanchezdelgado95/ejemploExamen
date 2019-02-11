@@ -1,0 +1,21 @@
+.container__pagina{
+    font-size: 15px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container__imagenes--izquierda{
+    background-color: yellow;
+}
+.container__imagenes--derecha{
+    background-color:salmon;
+}
+.container__imagen--izquierda{
+    background-color: yellow;
+    width: 400px;
+    height: 200px;
+}
+.container__imagen--derecha{
+    background-color: whitesmoke;
+    width: 400px;
+    height: 200px;
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Practica Examen</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/style.css" rel="stylesheet" type="text/css"/>
+        <script src="jquery-3.3.1.min.js"></script>
+        <script src="index.js"></script>
+    </head>
+    <body>
+        <div class="container__pagina">
+            <div class="container__imagenes--izquierda">
+                <div class="container__imagen--izquierda"><img id="img1" class="image" draggable="true" ondragstart="drag(event)" src="images/asistente-1.jpg"></div>
+                <div class="container__imagen--izquierda"><img id="img2" class="image" draggable="true" ondragstart="drag(event)" src="images/asistente-2.jpg"></div>
+                <div class="container__imagen--izquierda"><img id="img3" class="image" draggable="true" ondragstart="drag(event)" src="images/asistente-3.jpg"></div>
+                <div class="container__imagen--izquierda"><img id="img4" class="image" draggable="true" ondragstart="drag(event)" src="images/asistente-4.jpg"></div>
+            </div>
+            <div class="c-animacion__container">Animacion</div>
+            <div class="button__reset" onclick="reset(ev)">Reset</div>
+            <div class="container__imagenes--derecha">
+                <div id="drag1" class="container__imagen--derecha" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+                <div id="drag2" class="container__imagen--derecha" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+                <div id="drag3" class="container__imagen--derecha" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+                <div id="drag4" class="container__imagen--derecha" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
+            </div>
+        </div>
+    </body>
+</html>
