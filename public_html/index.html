@@ -16,14 +16,25 @@ and open the template in the editor.
     <body>
         <div class="container__pagina">
             <div class="container__imagenes--izquierda">
-                <div class="container__imagen--izquierda"><img id="img1" class="image" draggable="true" ondragstart="drag(event)" src="images/asistente-1.jpg"></div>
-                <div class="container__imagen--izquierda"><img id="img2" class="image" draggable="true" ondragstart="drag(event)" src="images/asistente-2.jpg"></div>
-                <div class="container__imagen--izquierda"><img id="img3" class="image" draggable="true" ondragstart="drag(event)" src="images/asistente-3.jpg"></div>
-                <div class="container__imagen--izquierda"><img id="img4" class="image" draggable="true" ondragstart="drag(event)" src="images/asistente-4.jpg"></div>
+                <div id="container1" class="container__imagen--izquierda"><img id="img1" class="image" draggable="true" ondragstart="drag(event)" src="images/asistente-1.jpg"></div>
+                <div id="container2" class="container__imagen--izquierda"><img id="img2" class="image" draggable="true" ondragstart="drag(event)" src="images/asistente-2.jpg"></div>
+                <div id="container3" class="container__imagen--izquierda"><img id="img3" class="image" draggable="true" ondragstart="drag(event)" src="images/asistente-3.jpg"></div>
+                <div id="container4" class="container__imagen--izquierda"><img id="img4" class="image" draggable="true" ondragstart="drag(event)" src="images/asistente-4.jpg"></div>
             </div>
-            <div class="c-animacion__container">Animacion</div>
-            <div class="button__reset" onclick="reset(ev)">Reset</div>
-            <div class="container__imagenes--derecha">
+            <div id="animacion" class="c-animacion__container--inactivo"></div>
+            <div id="audio">
+                <audio controls>
+                    <source src="[Dubstep] - Pegboard Nerds & MIU - Weaponize [Monstercat Release].mp3" type="audio/mpeg">
+                    Your browser does not support the <code>audio</code> tag.
+                </audio>
+            </div>
+            <div id="video">
+                <video width="320" height="240" controls>
+                    <source> src="Your Name www.DivxTotaL.com.avi"> type="video/avi">
+                </video>
+            </div>
+            <div class="button__reset" onclick="reset()">Reset</div>
+            <div id="containerDerecha" class="container__imagenes--derecha">
                 <div id="drag1" class="container__imagen--derecha" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
                 <div id="drag2" class="container__imagen--derecha" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>
                 <div id="drag3" class="container__imagen--derecha" ondrop="drop(event, this)" ondragover="allowDrop(event)"></div>

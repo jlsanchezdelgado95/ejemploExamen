@@ -1,4 +1,31 @@
+.c-animacion__container--inactivo{
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid #f0ad4e;
+    display:none;
+}
 .c-animacion__container{
-    width: 150px;
-    height: 100px;
+    display:block;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid #f0ad4e;
+    animation: animacion 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes animacion{
+    0% {
+        transform: translate(0px,0px)
+    }
+    50% {
+        transform: translate(100px,100px)
+    }
+    100% {
+        transform: translate(0px,0px)
+    }
 }
